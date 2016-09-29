@@ -54,7 +54,7 @@ define(
 
 						self.currently.time(new Date(data.currently.time*1000));
 						self.currently.summary(data.currently.summary);
-						self.currently.temperature(parseInt(data.currently.temperature)+'F');
+						self.currently.temperature(parseInt(data.currently.temperature)+'°F');
 						self.currently.humidity(data.currently.humidity);
 						self.currently.windSpeed(data.currently.windSpeed);
 						self.currently.windBearing(data.currently.windBearing);
