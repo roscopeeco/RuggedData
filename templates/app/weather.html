@@ -1,0 +1,54 @@
+<div class="loading" data-bind="visible:loading">
+	<img src="images/hourglass.gif" alt="Loading image" />
+	<h3>loading the latest weather</h3>
+</div>
+<!-- ko if:loaded -->
+<div class="card">
+  <div class="card-block">
+	<div class="col col-md-6 col-left">
+		<h3 class="card-title" data-bind="text:currentlySummary"></h3>
+		<h6 class="card-subtitle text-muted" data-bind="text:location"></h6>
+	</div>
+	<div class="col col-md-6 col-right">
+		<h2 class="temperature" data-bind="text:currently.temperature"></h3>
+		<div class="canvas">
+			<canvas id="weathericon" width="80" height="80"></canvas>
+		</div>
+	</div>
+  </div>
+  <div class="card-block">
+ 	<table class="table" width="100%">
+		<tbody>
+			<tr>
+				<th width="50%">Time</th>
+				<td width="50%" data-bind="text:currently.time"></td>
+			</tr>
+			<tr>
+				<th width="50%" >Temperature</th>
+				<td width="50%"  data-bind="text:currently.temperature"></td>
+			</tr>
+			<tr>
+				<th width="50%">Humidity</th>
+				<td width="50%" data-bind="text:currently.humidity"></td>
+			</tr>
+			<tr>
+				<th width="50%">Wind speed</th>
+				<td width="50%" data-bind="text:currently.windSpeed"></td>
+			</tr>
+			<tr>
+				<th width="50%">Wind bearing</th>
+				<td width="50%" data-bind="text:currently.windBearing"></td>
+			</tr>
+			<tr>
+				<th width="50%">Visibilty</th>
+				<td width="50%" data-bind="text:currently.visibility"></td>
+			</tr>
+			<tr>
+				<th width="50%">Cloud cover</th>
+				<td width="50%" data-bind="text:currently.cloudCover"></td>
+			</tr>
+		</tbody>
+	</table>
+  </div>
+</div>
+<!-- /ko -->
