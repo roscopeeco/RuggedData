@@ -18,11 +18,11 @@ Knockout has been used as the data binding library for the test.
 Bootstrap
 =========
 The Bootstrap CSS framework has been used to enable easy implementation of responsive functionality, 
-provide a layou framework and base styling.
+provide a layout framework and base styling.
 
 Skycon
 ======
-The Skycon icon generator has been inclued to display the 
+The Skycon icon generator has been included to display a weather icon based upon the current conditions.
 
 Functionality
 =============
